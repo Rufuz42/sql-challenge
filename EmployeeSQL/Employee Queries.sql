@@ -30,7 +30,7 @@ JOIN employees ON dept_manager.emp_no = employees.emp_no;
 
 -- 4. List the department of each employee with the following information: employee number, 
 --    last name, first name, and department name.
---  dept_emp has a composite key to both employees and departments, which has the other
+--  dept_emp has foreign keys to both employees and departments, which has the other
 --  fields required to be pulled in. Start there and join to those 2 tables. 
 
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
